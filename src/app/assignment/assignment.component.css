@@ -1,0 +1,23 @@
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: black;
+    background-color: #d6ddef;
+}
+
+.nav-link {
+    color: black;
+    font-size: 15px;
+
+}
+
+/*for select box*/
+.form-select {
+    display: inline-block;
+    width: 30%;
+    margin-right: 10px;
+}
+
+
+.selectcontainer{
+
+    margin-bottom: 15px;
+}

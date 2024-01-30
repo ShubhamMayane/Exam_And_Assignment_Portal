@@ -1,0 +1,37 @@
+#profile{
+    border: 1px solid rgba(129, 128, 128, 1);
+    border-radius: 0px 25px 0px 25px;
+    padding: 30px;
+    box-shadow: 1px 1px rgba(129, 128, 128, 1);
+    width: 40vh;
+}
+
+#details{
+    border: 1px solid rgba(129, 128, 128, 1);
+    border-radius: 0px 25px 0px 25px;
+    padding: 34px;
+    width: 63%;
+    margin-left: 25px;
+    height: 35vh;
+    box-shadow: 1px 1px rgba(129, 128, 128, 1);
+    
+}
+
+.fbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+#editbtn{
+    border:none;
+    background-color: white;
+    color: rgba(0, 60, 177, 1);
+   
+}
+
+.circle{
+    border: 3px solid;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}

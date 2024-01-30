@@ -1,0 +1,39 @@
+
+.box-8{
+	/* width: 95%; */
+	height: 330px;
+	
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+td, th {
+  text-align: left;
+  padding:15px;
+  color: black;
+  border-bottom: 1px solid #81818140;
+
+}
+.container{
+    margin-top: 2%;
+}
+
+svg{
+    justify-content: space-between;
+    margin-right: 1px;
+    align-items: center;
+}
+.check{
+    text-align: center;
+}
+.container{
+    margin-left: 3%;
+}
+.col-4{
+   
+}

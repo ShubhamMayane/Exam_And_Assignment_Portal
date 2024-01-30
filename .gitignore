@@ -11,6 +11,12 @@
 npm-debug.log
 yarn-error.log
 
+# backend
+/New-Logicpool-Backend-main
+New-Logicpool-Backend-main.rar
+src.rar
+
+
 # IDEs and editors
 .idea/
 .project

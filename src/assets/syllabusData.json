@@ -1,0 +1,26 @@
+[{
+    "description1":"This Full Stack Development program will help you master both front-end and backend Java technologies and accelerate your career as a full stack software developer. This course will expose you to basic and advanced concepts of web development. You will also learn Angular, Spring Boot, Hibernate, Servlets, and JSPs, MVC, Web Services, and other critical skills.", 
+    "description2":"This course will help advance your career as a full stack developer and help you learn some of the most high-demand skills in the industry.",
+    "topicsCovered": 
+        "TOPICS COVERED",
+        "topics1": 
+        "Implement OOPS Using JAVA",
+        "topics2": 
+        "Java servlets, and relational database ORM with Hibernate",
+        "topics3": 
+        "RESTful web services",
+        "topics4": 
+        "Front End with HTML, CSS, JavaScript",
+        "topics5": 
+        "Angular & Spring Framework",
+        "topics6": 
+        "MySOL / MongoDB",
+        "topics7": 
+        "Capstone Project"
+    ,
+    "courseDetails":
+        "COURSE DETAILS",
+    "duration":
+        "DURATION: 6 Months"
+    }
+  ]

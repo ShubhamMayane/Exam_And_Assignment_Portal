@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="col-lg-12 card card-body title">
+        <h1>FULL STACK DEVELOPMENT</h1>
+        <h2>Batch -1</h2>
+    </div>
+</div>
+  <br>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col col-md-2 card-body text-align-center">
+            <h2 class="text-center card-body syllabus">Syllabus</h2>   
+        </div>
+
+        <div class="col col-md-10 card card-body" *ngFor="let content of syllabus">
+            <h6>{{content.description1}}</h6>
+            <h6>{{content.description2}}</h6>
+            <ul style="list-style-type:square;">
+            <li><h5>{{content.topicsCovered}}</h5></li>
+            </ul>
+            <ul>
+                <li><h6>{{content.topics1}}</h6></li>
+                <li><h6>{{content.topics2}}</h6></li>
+                <li><h6>{{content.topics3}}</h6></li>
+                <li><h6>{{content.topics4}}</h6></li>
+                <li><h6>{{content.topics5}}</h6></li>
+                <li><h6>{{content.topics6}}</h6></li>
+                <li><h6>{{content.topics7}}</h6></li>
+            </ul>
+            <ul style="list-style-type:square;">
+                <li><h6>{{content.courseDetails}}</h6></li>
+            </ul>
+            <ul>
+                <li><h6>{{content.duration}}</h6></li>
+            </ul>
+            
+        </div>
+
+    </div>
+    

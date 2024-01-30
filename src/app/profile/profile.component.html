@@ -1,0 +1,128 @@
+<h2>Profile</h2>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" id="profile" align="center">
+            <div class="circle" [ngStyle]="{ 'border-color': this.profile.status === 'Active' ? 'green' : 'red' }" >
+                <svg   xmlns="http://www.w3.org/2000/svg" width="68" height="70" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                  </svg>
+            </div>
+              
+            <h5>{{profile.firstname +' '+profile.lastname}} </h5>
+            <p>{{profile.course}}</p>
+            <hr>
+            <h6 align="left">Status</h6>
+            <p align="left">{{profile.status}}</p>
+            <h6 align="left">Email Id</h6>
+            <p align="left">{{profile.emailid}}</p>
+            <!-- <h6 align="left">Phone Number</h6>
+            <p align="left">{{this.profile.phone}}</p>
+            <h6 align="left">Work Address</h6>
+            <p align="left">{{this.profile.address}} </p> -->
+        </div>
+        
+
+
+
+        <div class="col-md-8" id="details">
+            <div>
+                <h6 align="left">Profile Details</h6>
+                <!-- <button type="button" id="editbtn" data-bs-toggle="modal" data-bs-target="#edit">Edit</button> -->
+
+            </div>
+            <br>
+            
+            <div class="fbox">
+                <p>First name</p>
+                <p>{{profile.firstname}}</p>
+            </div>
+            <div class="fbox">
+                <p>Last name</p>
+                <p>{{profile.lastname}}</p>
+            </div>
+            <!-- <div class="fbox">
+                <p>Phone(work)</p>
+                <p>{{profile.phone}}</p>
+            </div>
+            <div class="fbox">
+                <p>Gender</p>
+                <p>{{profile.gender}}</p>
+            </div> -->
+            <div class="fbox">
+                <p>Password</p>
+                <!-- <p>{{profile.changepassword}}</p> -->
+                <button type="button" (click)="OnChangepassword()" id="editbtn" data-bs-toggle="modal" data-bs-target="#changepass">Change Password</button>
+            </div>
+            
+            
+            
+
+        </div>
+    </div>
+</div>
+
+
+  
+<!-- Modal -->
+
+
+<div class="modal fade" id="changepass" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header" style="background-color: black;color: white;">
+        <h5 class="modal-title" id="staticBackdropLabel">Change Password</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <form [formGroup]="changepassForm" (ngSubmit)="changePassword()">
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="emailid" style="width: 100%;" >Email Id</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="emailid" formControlName="emailid">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="currentpassword" style="width: 100%;" >Current Password</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="password" class="form-control" id="currentpassword" formControlName="password">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="newpassword" style="width: 100%;" >New Password</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="password" class="form-control" id="newpassword" formControlName="newpassword">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="confirmpassword" style="width: 100%;" >Confirm New Password</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="password" class="form-control" id="confirmpassword" formControlName="confirmpassword">
+                        </div>
+                    </div>
+                
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: rgb(174, 9, 9, 1)">Cancel</button>
+            <button type="submit" [disabled]="!changepassForm.valid"  class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: rgb(35, 62, 119, 1)">Submit</button>
+            </div>
+        </form>
+        <!-- <div *ngIf="message" class="message">{{ message }}</div> -->
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+
+
+ 

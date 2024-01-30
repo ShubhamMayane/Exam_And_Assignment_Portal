@@ -1,0 +1,69 @@
+
+.btn-primary{
+    background-color: #d6ddef !important;
+    color: black;
+    border: 1px solid black;
+}
+
+/*css for buttons inside table*/
+.action-button{
+    background-color: white;
+    border: 0px;
+
+}
+
+
+
+/* modal box related properties*/
+
+.modal-header{
+    display: flex !important;
+    background-color: black;
+    color: white;
+
+}
+
+.formGroup{
+    display: inline-block;
+}
+
+.form-control{
+
+    display: inline-block !important;
+    width: 70%;
+}
+.col-form-label{
+    margin-right: 20px;
+    width: 50%;
+}
+
+.form-select{
+
+    display: inline-block !important;
+    width: 70%;
+}
+
+
+
+.modal-footer 
+{
+    justify-content: center !important;
+}
+
+/* css for validation*/
+input.ng-invalid.ng-touched{
+    border:1px solid red;
+}
+
+/*for select box*/
+select.ng-invalid.ng-touched{
+    border:1px solid red;
+}
+
+
+
+.errormessage{
+    color: #cc0033;
+    font-size: 12px;
+    margin-bottom: 0px;
+}

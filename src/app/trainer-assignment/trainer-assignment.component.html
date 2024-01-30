@@ -1,0 +1,166 @@
+<div class="container">
+  <div class="row">
+      <div class="col-8 box-8">
+          <table >
+              <tr>
+                <th>Student Name</th>
+                <th class="check"> Submission</th>
+                <th class="check">Checked</th>
+              </tr>
+              <tr>
+             
+  
+              <!-- --------------- -->
+              <tr>
+               <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>Sakshi Shetty</td>
+               <td class="check"> <input type="checkbox" ></td>
+               <td class="check"> <input type="checkbox" ></td>
+              </tr>
+  
+               <!-- --------------- -->
+  
+              <tr>
+               <td> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg> Kartvya Mahajan</td>
+               <td class="check"> <input type="checkbox" ></td>
+               <td class="check"> <input type="checkbox" ></td>
+              </tr>
+  
+               <!-- --------------- -->
+  
+              <tr>
+               <td> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg> Shubham Mayane</td>
+               <td class="check"> <input type="checkbox" ></td>
+               <td class="check"> <input type="checkbox" ></td>
+             </tr>
+  
+              <!-- --------------- -->
+  
+             <tr>
+               <td> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>Rahul Bhople</td>
+               <td class="check"> <input type="checkbox" ></td>
+                <td class="check"> <input type="checkbox" ></td>
+              </tr>
+  
+               <!-- --------------- -->
+          </table>
+      </div>
+
+  
+      <div class="col-4">
+          <div class="card text-center">
+              <div class="card-header">
+                Assign Task
+              </div>
+              <div class="card-body">
+ 
+          <!-- Modal Button -->
+              <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#uploadAssignment">
+                      Upload Assignment
+              </button>
+          
+          <!--Modal-->
+          <div class="modal fade" id="uploadAssignment" tabindex="-1" aria-labelledby="uploadAssignmentLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: black;color: white;">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Upload Assignment</h1>
+                    <button type="button" id="Add-Form-close-btn" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body">
+                      <div class="container-fluid">
+
+                      <form [formGroup]="uploadAssignmentForm" (ngSubmit)="uploadAssignment()">
+              
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                      <label for="recipient-name" style="width: 100%;">File Url:</label>
+                                   </div>
+
+                                   <div class="col-md-8">
+                                       <input type="text" class="form-control" id="formurl" formControlName="assignmentFileUrl">
+                                    </div>
+                                </div>
+
+
+                                <div class="row mb-3">
+                                  <div class="col-md-4">
+                                        <label for="recipient-name"  style="width: 100%;">File Name:</label>
+                                      </div>
+
+                                      <div class="col-md-8">
+                                         <input type="text" class="form-control" id="filename" formControlName="assignmentName">
+                                      </div>
+                                  </div>
+
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn" data-bs-dismiss="modal" style="background-color: palevioletred">Cancel</button>
+                                      <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: palevioletred">Upload</button>
+                                      </div>
+
+                              </form>
+
+                                </div>
+                               </div>
+
+
+                          
+                          
+                      </div>
+                      </div>
+
+                  </div>
+              </div>
+
+
+              
+              </div>
+            <!-- </div> -->
+
+            <br>
+  
+  
+            <div class="card text-center">
+              <div class="card-header">
+                Private Comment
+              </div>
+              <div class="card-body">
+                <input  type="text" placeholder="Add comment to Student">
+              </div>
+            </div>
+            <br>
+  
+            <div class="card text-center">
+              <div class="card-header">
+                Class Comment
+              </div>
+              <div class="card-body">
+                <input  type="text" placeholder="Add a class Comment">
+              </div>
+            </div>
+            <br>
+            </div>
+      </div>
+
+
+
+
+  
+  
+  
+  
+  </div>
+
+  

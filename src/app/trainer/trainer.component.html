@@ -1,0 +1,36 @@
+<h2> Trainers</h2>
+
+<!-- <div class="container">
+<div class="row">
+    <div class="col-md-3">
+    <div class="card-container">
+        <img class="round" src="https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?size=626&ext=jpg&ga=GA1.1.143553753.1685431378&semt=sph" alt="user" />
+        <h3>Shubham </h3>
+        <h6>Pune</h6>
+        <p> <br/> front-end developer</p>
+        <p> Contact No:  +91 1234567790</p>
+    </div>
+</div>
+</div>
+</div> -->
+
+ 
+<div class="container">
+    <div class="row ">
+
+        <!-- first card -->
+        <div class="col-md-3" *ngFor="let value of Trainers">
+             <div class="card-container" >
+                  <img class="round" src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?size=626&ext=jpg&ga=GA1.1.1048552809.1699208255&semt=ais">
+                  <h3>{{value.trainerFullName}}</h3>
+                  <h6>{{value.courseName}}</h6>
+                   <p> {{value. moduleName}}</p>
+
+                  
+             </div>
+      </div>
+      </div>
+      </div>
+     
+  
+

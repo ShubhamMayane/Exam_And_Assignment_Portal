@@ -1,0 +1,121 @@
+<div class="container-fluid mt-3">
+    <h2>Calender</h2>
+        <hr>
+    <div class="row">
+        <div class="col-md-8">
+            <full-calendar style="width: 100%;" [options]="calendarOptions"></full-calendar>
+        </div>
+        <div class="col-md-4 notification-main-div" >
+                <h3>Notifications</h3>
+  
+               
+            <div class="notification">
+  
+                
+                <div class="row">
+                    <div class="col-md-1 sideDesign">
+  
+                    </div>
+                    <div class="col-md-11">
+                        <h5 class="notification-header">Class Test</h5>
+                        <p class="notification-description">Based On :Bootstrap</p>
+                        <p class="notification-date">12 apr 2023</p>
+                    </div>
+                </div>
+  
+                    
+            </div>
+  
+        </div>
+    </div>
+    
+    
+    
+     <!-- class="show"  style="display: block;" -->
+      <!-- Add Event modal box start -->
+      <div class="modal fade" id="addEventModal" tabindex="-1" aria-labelledby="addEventModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Event</h1>
+              <button type="button" id="add_Form_Close_Btn"  class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form [formGroup]="addEventForm" (ngSubmit)="addEvent()">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Event Name:</label>
+                                    <input type="text" class="form-control" formControlName="eventname">
+                                    </div>
+                                </div>
+                          </div>
+    
+                          <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                  <label for="message-text" class="col-form-label ">Event Date:</label>
+                                  <input type="date" class="form-control" formControlName="eventdate">
+                                </div>
+                              </div>
+                          </div>
+                            
+                          
+                          <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Event Type:</label>
+                                    <select class="form-select" aria-label="Default select example" formControlName="eventtype">
+                                        <option *ngFor="let value of eventTypes" [value]="value.color" >
+                                        {{value.type}}
+                                        </option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Course Name:</label>
+                                        <select class="form-select"  (change)="loadBatchesInSelectBox($event)"aria-label="Default select example" formControlName="coursename">
+                                          <option *ngFor="let value of courseDetails" [value]="value.courseName" >
+                                          {{value.courseName}}
+                                           </option>
+                                        </select></div>
+                                </div>
+                            </div>
+                            
+                         
+                          <div class="row">
+                            <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Batch</label>
+                                        <select class="form-select" aria-label="Default select example" id="batchname" formControlName="batchname">
+                                        <option *ngFor="let batch of batchDetails" [value]="batch.batchName">
+                                            {{batch.batchName}}
+                                            </option>
+                                        </select>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                          
+    
+                      </div>
+              
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-dark">Submit</button>
+                </div>
+          </form>
+          </div>
+        </div>
+      </div>
+       <!-- add student modal box end -->
+    </div>
+    
+    

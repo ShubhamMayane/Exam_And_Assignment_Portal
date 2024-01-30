@@ -1,0 +1,49 @@
+.container-fluid{
+    height: 100vh;
+    border: black 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #164863;
+}
+
+h5{
+    text-align: center;
+   
+}
+
+
+
+option{
+
+    font-size: 18px;
+    
+}
+
+
+.col-md-12{
+   
+    height: 50vh;
+    background-color: #DDF2FD;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     border-radius: 15px;
+     padding-top: 10%;
+     
+   
+}
+
+form{
+    
+    width: 100%;
+
+    
+}
+
+
+.btn-div{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}

@@ -1,0 +1,20 @@
+<div class="container-fluid" *ngIf="authService.isLoggedIn" style="padding: 0px;">
+    <app-navbar></app-navbar>
+        <div class="row" style="width: 100%;">
+          <div class="col-md-2 column" style="padding: 0px;">
+      
+            <app-sidebar></app-sidebar>
+            
+          </div>
+          <div class="col-md-10 column" style="padding: 0px;">
+            
+            <router-outlet></router-outlet>
+            <div>
+              
+            </div>
+            
+          </div>
+        </div>
+</div>
+    
+ 

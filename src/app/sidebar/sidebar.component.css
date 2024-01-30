@@ -1,0 +1,37 @@
+.sidebar{
+    height: 88vh;
+    background-color: black !important;
+  
+}
+.nav-pills .nav-link {
+    border-radius: var(--bs-nav-pills-border-radius);
+    color: white !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var(--bs-nav-pills-link-active-bg);
+}
+
+.bi {
+    vertical-align: -0.125em;
+    color: white;
+}
+hr {
+    margin: 1rem 0;
+    color: white;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: .25;
+}
+
+.nav-item{
+    margin-bottom: 15px;
+}
+
+
+.fs-4
+{
+    color: white !important;
+    margin-left: 15px !important;
+}
+

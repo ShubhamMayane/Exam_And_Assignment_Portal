@@ -1,0 +1,51 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+body{
+    box-sizing: border-box;
+    font-family: serif;
+
+}
+.sidebar{
+    /* position: fixed; */
+    background: gray;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.sidebar{
+    text-align: center;
+    font-size: 15px;
+    color: #ffff;
+    background: darkslategrey;
+    padding: 10px;
+    font-weight: bold;
+}
+.sidebar ul li{
+    margin: 25px 0;
+
+}
+
+.sidebar ul li a{
+    color: #ffff;
+    padding: 0 30px;
+}
+
+.sidebar ul li a:hover :visited{
+    color:blue;
+    
+}
+
+
+li img{
+margin-left: 90%;
+border-radius:50%;
+}
+
+.bi{
+    margin: 5px;
+}

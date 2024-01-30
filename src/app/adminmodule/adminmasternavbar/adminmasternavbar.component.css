@@ -1,0 +1,33 @@
+/*css for tabs and pills*/
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: black;
+    background-color: #d6ddef;
+
+   
+}
+.nav{
+    position:sticky;
+    top:10px !important;
+}
+
+.nav-link {
+    color: white;
+    font-size: 15px;
+    border-radius: 0px !important;
+   
+
+}
+
+#pills-tab{
+    background-color: black;
+}
+
+.btn-primary{
+    background-color: #d6ddef !important;
+    color: black;
+    border: 1px solid black;
+}
+.first{
+    background-color: antiquewhite;
+}

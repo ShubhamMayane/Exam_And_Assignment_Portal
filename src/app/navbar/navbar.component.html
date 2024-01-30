@@ -1,0 +1,23 @@
+<nav class="navbar container-fluid navbar-dark bg-dark navbar-expand-sm d-flex shadow bg-white rounded" >
+    <div class="container-fluid nav-container" >
+        <a class="navbar-brand me-auto" href="#">
+            <img src="../../assets/Images/Frame 5.png" width="200" height="50" alt="logo">
+            <!-- Logipool -->
+          </a>
+        <div class="dropdown">
+
+             <a class="dropdown-toggle dropdown-name" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://png.pngtree.com/png-vector/20191110/ourmid/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg" style="margin-right: 5px;" width="40" height="40" class="rounded-circle">  
+              <span id="username">{{loggedInUserName}}</span>               
+                
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" routerLink="/home/profile" >View Profile</a></li>
+                <li><a class="dropdown-item" href="#" (click)="logOut()">Log Out</a></li>
+              </ul>
+            </div>
+        </div>
+ 
+  </nav>
+
+

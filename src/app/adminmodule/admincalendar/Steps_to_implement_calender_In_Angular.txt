@@ -1,0 +1,52 @@
+1.hit following commands in cmd
+
+npm install @fullcalendar/angular
+npm install @fullcalendar/interaction
+npm install @fullcalendar/core
+npm install @fullcalendar/daygrid
+
+
+2.module.ts madhe pudhil import statement lihi
+	import { FullCalendarModule } from '@fullcalendar/angular';
+
+3.anni yach file madhe imports array madhe FullCalendarModule ha as a element mhanun add kar
+
+4.Create one component as calender and render it in app.component.html
+
+5.open calender.component.ts file and do following things in it
+ a.import following modules in it:
+	import { CalendarOptions } from '@fullcalendar/core';
+	import dayGridPlugin from '@fullcalendar/daygrid';
+
+ b.Define following class variable:
+	 calendarOptions: CalendarOptions = {
+    initialView: 'dayGridMonth',
+    plugins: [dayGridPlugin]
+  };
+ c.open calendar.component.html and write below code in it
+	<full-calendar [options]="calendarOptions"></full-calendar>
+
+
+6.Now run the project you can see calender on browser
+
+Now if you want to show specific event on specific date then
+	add follwing array i.e
+	 events=[
+      { title: 'event 1', date: '2023-10-31' }, //yyyy/mm/dd
+      { title: 'event 2', date: '2023-11-02' }
+    ]
+
+in calenderOptions object in calendar.component.ts file so your calenderOptions object will look like
+ calendarOptions: CalendarOptions = {
+    initialView: 'dayGridMonth',
+    plugins: [dayGridPlugin],
+    events: [
+       { title: 'BirthDay', date: '2023-10-31',color:"red"}, //yyyy/mm/dd
+    { title: 'Class Test', date: '2023-11-02',color:"green"}
+    ]
+  };
+
+
+refere follwing video to do it
+https://www.youtube.com/watch?v=5RzGEZH4gdw&t=65s
+but do installation as mentioned in this file only

@@ -1,0 +1,167 @@
+/* Main CSS Here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    }
+    
+    .card-title{
+        color: black;
+    }
+    
+    .recent-Articles{
+        font-weight: bold;
+        text-decoration: none;
+        font-style: normal;
+    }
+    
+    
+    .main-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    
+    z-index: 1;
+    }
+
+    /* image css */
+    card{
+        border-radius: 40%;
+    }
+
+    
+    
+    .main {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 2%;
+    }
+    
+    .box-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    }
+    
+    .option1 {
+    border-left: 5px solid #010058af;
+    background-color: var(--Border-color);
+    color: white;
+    cursor: pointer;
+    }
+    .option1:hover {
+    border-left: 5px solid #004358af;
+    background-color: var(--Border-color);
+    }
+    .box {
+    height: 130px;
+    width: 230px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    }
+    .box:hover {
+    transform: scale(1.08);
+    }
+    
+    .box:nth-child(1) {
+    background-color: var(--one-use-color);
+    }
+    .box:nth-child(2) {
+    background-color: var(--two-use-color);
+    }
+    .box:nth-child(3) {
+    background-color: var(--one-use-color);
+    }
+    .box:nth-child(4) {
+    background-color: var(--two-use-color);
+    }
+    
+    .box .text {
+    color: black;
+    }
+    
+    
+    .report-container {
+  
+    
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgb(188, 188, 188);
+    padding: 2% 2% 2% 2% ;
+    }
+    
+    .main-div{
+        border: 1px solid black;
+        margin-right: 0px;
+        width: 24% !important;
+        padding: 0px;
+    
+    }
+    
+    button{
+        padding: 0;
+        border: none;
+        background: none;
+    }
+    .btn{
+        background-color: #fff;
+        
+       
+        user-select: none;
+        cursor: pointer;
+        transition: all 100ms linear;
+        position: relative;
+        box-shadow: inset 0 4px 6px -1px rgb(0 0 0 / 0.1), 
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+    .btn:active {
+        box-shadow: inset 0 0 0 4px #043b3f6b;
+    }
+    
+    
+
+    /*code for text animation*/
+    #main-heading{
+        font-family: Oswald;
+        /* font-size: 100px; */
+         animation: Color 4s linear infinite;
+        -webkit-animation: Color 4s ease-in-out infinite;
+        
+      }
+    
+
+      @keyframes Color{
+        0%{
+          color:#A0D468;
+        }
+        
+        20%{
+          color:#4FC1E9;
+        }
+        
+        40%{
+          color:#FFCE54;
+        }
+        
+        60%{
+          color:#FC6E51;
+        }
+        
+        80%{
+          color:#ED5565;
+        }
+        
+        100%{
+          color:#AC92EC;
+        }
+      }

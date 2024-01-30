@@ -1,0 +1,55 @@
+#search{
+    width: 70%;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+
+
+#notification{
+    height: 72vh;
+    background:#ebebeb;
+    border-radius: 4px;
+    color: black;
+    font-size: larger;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+#mycourses{
+    height: 20vh;
+    background: #ebebeb;
+    border-radius: 4px;
+    color: black;
+    font-size: larger;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#announcement{
+    height: 30vh;
+    background: #ebebeb;
+    border-radius: 4px;
+    color: black;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
+#classannouncement{
+    height: 20vh;
+    background: #ebebeb;
+    border-radius: 4px;
+    color: black;
+    font-size: larger;
+    margin-right: 10px;
+    width: 49%;
+}
+
+#privateannouncement{
+    height: 20vh;
+    background: #ebebeb;
+    border-radius: 4px;
+    color: black;
+    font-size: larger;
+    width: 49%;
+}

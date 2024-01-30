@@ -1,0 +1,83 @@
+.rightSideDiv{
+
+    border: 1px solid black;
+    height: 100vh;
+    padding: 10%;
+}
+
+.addEventBtn{
+
+    width: 22% !important;
+}
+
+
+/* modal box related properties*/
+
+.modal-header{
+    display: flex !important;
+    background-color: black;
+    color: white;
+
+}
+
+.formGroup{
+    display: inline-block;
+}
+
+.form-control{
+
+    display: inline-block !important;
+    width: 70%;
+}
+.col-form-label{
+    margin-right: 20px;
+    width: 24%;
+}
+
+.form-select{
+
+    display: inline-block !important;
+    width: 70%;
+}
+
+
+
+.modal-footer 
+{
+    justify-content: center !important;
+}
+.first{
+    background-color: aquamarine;
+}
+
+
+/*notificarion div*/
+
+.notification-main-div
+{
+    height: 100vh;
+    border: 1px solid #799feb;
+    padding: 10px;
+    border-radius:0px 15px 0px 15px;
+    
+}
+.notification{
+
+    /* border: 1px solid black; */
+    border-radius:0px 15px 0px 15px;
+    padding-left: 20px;
+    background-color: #a8bce4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.notification-date,.notification-header,.notification-description{
+    margin-bottom: 0px;
+}
+
+.sideDesign{
+
+    padding-right: 0px !important;
+    width: 0.1% !important;
+    background-color: #344e85;
+    /* border: 1px solid black; */
+}

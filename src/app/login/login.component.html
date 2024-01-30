@@ -1,0 +1,60 @@
+
+
+
+<section class="img">
+    <div class="container-fluid" id="bg">
+    
+        <div class="form-card  ms-5" style="padding-top:8%;">
+            <div class="logo">
+                
+                <img src="../../assets/Images/Frame 5.png" width="300" height="80" style="position: relative;
+                left: 9%;" alt="Logo">
+            </div>
+            
+            <form [formGroup]="loginForm" (ngSubmit)="OnSubmit()">
+            <div class="form-group mb-3" >
+                  <label><b>Email ID</b>
+                    <sup style="color:  red;">*</sup>
+                  </label>
+                    
+            <div class="input-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" id="usericon" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                  </svg>
+                <input class="form-control" formControlName="email" type="email"  id="exampleInputEmail1" aria-describedby="emailHelp" style="padding-left: 30px; border-radius: 0%;" placeholder="Username" >
+            </div>
+            <span *ngIf="loginForm.controls['email'].valid==false && loginForm.controls['email'].touched==true" class="errormessage">Please enter valid username</span>
+            </div>
+    
+            <div class="form-group">
+                <label><b>Password</b>
+                  <sup style="color:  red;">*</sup>
+                </label>
+                  
+                <div class="input-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="usericon" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+                        <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                      </svg>
+                    <input class="form-control" formControlName="password" type="password"  id="exampleInputEmail1" aria-describedby="emailHelp" style="padding-left: 30px; border-radius: 0%;" placeholder="password" >
+                </div>
+                <span *ngIf="loginForm.controls['password'].valid==false && loginForm.controls['password'].touched==true" class="errormessage">Please enter password</span>
+          </div>
+               
+            
+            <div> 
+            </div>
+    
+        <div class="d-flex justify-content-center">
+            <a routerLink="/forgetpassword" class="text-end me-2">Forget Password?</a>
+        </div>
+            <br>
+            
+        <div class="d-grid gap-2">
+            <button  type="submit" class="btn btn-dark text-white" >Log In</button>
+                
+        </div>  
+    
+        </form>
+        </div>
+    </div>
+    </section>

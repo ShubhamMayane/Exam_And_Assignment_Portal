@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <h5 class="mb-3">Enter Following Details to get your password on gmail</h5>
+            
+            <form [formGroup]="userForm">
+                <div class="form-group">
+                    <label class="mb-2">Enter Your Email Id :</label>
+                    <input type="email" id="userEmail" formControlName="useremailid" class="form-control mb-3" style="border:1px solid #427D9D"/>
+                 
+                
+                </div>
+                <div class="btn-div">
+                    <button id="btn" type="button" (click)="submit()" class="btn btn-primary">Submit</button>
+                </div>
+              
+            </form>
+        
+        </div>
+    </div>
+    
+    
+</div>

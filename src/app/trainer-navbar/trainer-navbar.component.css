@@ -1,0 +1,30 @@
+#username{
+   
+    font-size: 20px;
+    color: black;
+}
+.dropdown-name{
+    text-decoration: none;
+}
+  
+
+.dropdown-toggle::after {
+    color: black;
+}
+
+
+.navbar-brand {
+color: black !important;
+}
+
+.rounded-circle {
+    border: 1px solid black;
+}
+nav{
+    width: 100vw !important;
+  
+}
+.dropdown-name{
+    padding-right: 20px;
+}
+
